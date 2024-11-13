@@ -1,0 +1,369 @@
+/* Configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Estilo básico do cabeçalho */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* Ícone de menu para dispositivos móveis */
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Seção Home */
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px 80px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    min-height: 100vh;
+}
+
+.home-content {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #ff7e5f;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff6363;
+    color: #fff;
+}
+
+.home-image {
+    flex: 1;
+    text-align: center;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.home-image img.loaded {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Seção Sobre */
+.sobre-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.sobre-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Seção Serviços */
+.servicos-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.servicos-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.servicos-section .servico {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicos-section .servico:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.servicos-section .agendar-btn {
+    background-color: #f0a500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.servicos-section .agendar-btn:hover {
+    background-color: #d18e00;
+}
+
+.servicos-section .servicos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+
+/* Seção Depoimentos */
+.depoimentos-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.depoimentos-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.depoimentos-section blockquote {
+    font-style: italic;
+    color: #666;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Seção Contato */
+.contato-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contato-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff6363;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #f0a500;
+}
+
+/* Outros ajustes */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 900px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #333;
+    }
+
+    .nav-links {
+        display: none;
+        /* Esconde os links de navegação em telas menores */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        z-index: 1;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        /* Exibe o ícone de hambúrguer em telas menores */
+    }
+
+    /* Mostra o menu quando ativado */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .home-section {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px 20px;
+    }
+
+    .home-content {
+        flex: 1;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .home-content p {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .sobre-section h2 {
+        font-size: 2.8rem;
+    }
+
+    .sobre-section p {
+        font-size: 1.5rem;
+    }
+
+    .servicos-section h2 {
+        font-size: 2rem;
+    }
+
+    .servicos-section .servico p {
+        font-size: 1.5rem;
+    }
+
+    .depoimentos-section blockquote p {
+        font-size: 1.5rem;
+    }
+
+    .depoimentos-section blockquote footer {
+        font-size: 1.3rem;
+    }
+
+    .servicos-section .servicos-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
