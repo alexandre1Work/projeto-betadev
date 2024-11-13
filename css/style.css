@@ -51,7 +51,7 @@ header {
 /* Ícone de menu para dispositivos móveis */
 .menu-icon {
     display: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #fff;
     cursor: pointer;
 }
