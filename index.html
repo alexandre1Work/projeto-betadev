@@ -127,15 +127,15 @@
     </section>
 
     <!-- Seção Contato -->
-    <!-- <section id="contato" class="contato-section">
+    <section id="contato" class="contato-section">
         <h2>Entre em Contato</h2>
-        <form>
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="E-mail" required>
-            <textarea placeholder="Mensagem" required></textarea>
+        <form id="form">
+            <input type="text" id="nome" name="name" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="Email" placeholder="E-mail" required>
+            <textarea id="mensagem" placeholder="Mensagem" required></textarea>
             <button type="submit">Enviar Mensagem</button>
         </form>
-    </section> -->
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -150,6 +150,7 @@
     </footer>
 
 
+    <script src="./js/contato.js"></script>
     <script src="https://kit.fontawesome.com/90a969b901.js" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
