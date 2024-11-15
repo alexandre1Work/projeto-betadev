@@ -438,4 +438,7 @@ video {
   .servicos-section .servicos-container {
     grid-template-columns: repeat(1, 1fr);
   }
+  .detalhes-container {
+    flex-direction: column;
+  }
 }
