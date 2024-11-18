@@ -25,7 +25,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
+background: linear-gradient(90deg, #ff7e5f, #feb47b);
+
 }
 
 .logo {
@@ -62,7 +63,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 100px 20px 80px;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background: linear-gradient(to right,  #ff7e5f ,#ff7e5f, #feb47b);
   color: #fff;
   min-height: 100vh;
 }
@@ -223,55 +224,84 @@ header {
 .detalhes-h1 {
   margin-top: 50px;
   font-size: 24px;
-  color: green;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .detalhes {
   text-align: center;
-  color: green;
   font-family: Arial, sans-serif;
 }
 
-.detalhes .icon {
+.detalhes .fa-2x {
   font-size: 40px;
   margin-bottom: 10px;
-  color: green;
+  color: #16a34a;
 }
 
 .detalhes h3 {
   font-size: 18px;
   font-weight: bold;
-  color: green;
   margin: 5px 0;
 }
 
 .detalhes p {
   font-size: 14px;
-  color: green;
   margin: 0;
 }
 
 /* Seção Depoimentos */
 .depoimentos-section {
-  padding: 80px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .depoimentos-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .grid-container {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      flex-wrap: wrap;
+      gap: 1.8rem;
+  }
+  
+  .grid-item {
+      display: flex; 
+      flex-direction: column; 
+      justify-content: space-between; 
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .grid-item:hover {
+      background-color: #f3f4f6;
+  }
+  
+  .star {
+      color: #f0a500;
+      display: flex;
+      padding: 7px 15px;
+  }
+  
+  .description {
+      font-style: italic;
+      text-align: justify;
+      padding: 5px 20px;
+      flex-grow: 1; 
+  }
+  
+  .user {
+      color: #8b5cf6; 
+      font-size: 1.2em;
+      margin-top: auto;
+  }
 
-.depoimentos-section h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.depoimentos-section blockquote {
-  font-style: italic;
-  color: #666;
-  margin: 20px auto;
-  max-width: 600px;
-}
 
 /* Seção Contato */
 .contato-section {
